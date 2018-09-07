@@ -1,0 +1,23 @@
+JSON format notes
+
+JSON syntax is derived from JavaScript object notation syntax:
+-Data is in name/value pairs
+-Data is separated by commas
+-Curly braces hold objects
+-Square brackets hold arrays
+
+
+
+JSON data types: 
+names (keys) are always:
+strings
+values can be:
+string, number, JSON object, array, boolean, null
+
+{"employees":[
+    { "firstName":"John", "lastName":"Doe" },
+    { "firstName":"Anna", "lastName":"Smith" },
+    { "firstName":"Peter", "lastName":"Jones" }
+]}
+
+employees is object, with array of three employees
