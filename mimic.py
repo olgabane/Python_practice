@@ -59,20 +59,21 @@ def mimic_dict(filename):
     for i in range(0, len(file_list)-1):
         word = file_list[i]
         dict[word].append(file_list[i+1])
-    
-    return
+    return dict
 
 
+#mimic alice.txt. Note I am starting with word 'Alice' rather than ''. Also allowing repeat of current_value if present word not found as key. 
 def print_mimic(mimic_dict, word):
     i = 0
     word = "Alice"
     
+    print "--------", "Here is the mimic'ed dictionary"
+    
     for i in range(0, 200):
-        current_value = random.choice(dict.get(word))
+        current_value = random.choice(mimic_dict.get(word))
         print current_value
         word = current_value
         i = i + 1
-        
     return
 
 
